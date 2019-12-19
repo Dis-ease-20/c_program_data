@@ -1,13 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int a[5],i;
-    printf("Enter the value of array=");
-    for(i=0;i<5;i++)
-    scanf("%d",&a[i]);
-    printf("Array element are:");
-    for(i=0;i<5;i++)
-        printf("%d\t",a[i]);
+    int i,n,otp;
+    for(i=1;i<=10;i++)
+    {
+       printf("enter the working hour=");
+       scanf("%d",&n);
+        if( n>40)
+        {
+          otp=(n-40)*12;
+          printf("overtime payment of %d employment=%d\n",i,otp);
+        }
+        else
+        {
+            otp=0;
+            printf("overtime payment of %d employee is=%d\n",i,otp);
+        }
+    }
     return 0;
-
 }
